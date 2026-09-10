@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>勇闯黄金城-冒险策略指南与终极宝藏探秘之旅</title>
+    <meta name="description" content="勇闯黄金城专题网站，深度解析古城传说、探险路线、生存技巧与宝藏之谜，为您提供从入门到进阶的冒险策略指南与装备选择建议。">
+    <meta name="keywords" content="勇闯黄金城,黄金城探险,冒险攻略,古城传说,宝藏猎取,探险装备,黄金城路线,迷失之城,南美探险,黄金城攻略">
+    <link rel="stylesheet" href="data:text/css;base64,Lm5vdC1leGlzdHt9">
+    <style>
+        :root {
+            --deep-gold: #b8860b;
+            --rich-gold: #d4a017;
+            --light-gold: #f3e5ab;
+            --dark-forest: #1a2e1a;
+            --deep-brown: #3e2a1e;
+            --sand: #e8d8a0;
+            --parchment: #f9f2e0;
+            --night: #121a12;
+            --muted-gold: #c9a84c;
+            --shadow: rgba(0,0,0,0.4);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, "华文楷体", "KaiTi", "SimSun", serif;
+            background-color: var(--dark-forest);
+            color: #f0e6d2;
+            line-height: 1.7;
+            background-image: radial-gradient(circle at 20% 10%, rgba(184,134,11,0.12) 0%, transparent 40%), radial-gradient(circle at 80% 90%, rgba(212,160,23,0.1) 0%, transparent 35%);
+        }
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* 页眉 */
+        .site-header {
+            background: linear-gradient(145deg, #1c2c1c, #0f1a0f);
+            border-bottom: 2px solid var(--rich-gold);
+            padding: 20px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            position: relative;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            font-size: 2.2rem;
+            filter: drop-shadow(0 0 8px rgba(212,160,23,0.5));
+        }
+        .logo-text h1 {
+            font-size: 1.9rem;
+            color: var(--light-gold);
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px var(--shadow);
+            font-weight: 600;
+        }
+        .logo-text .sub {
+            font-size: 0.85rem;
+            color: var(--muted-gold);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            text-decoration: none;
+            color: #eee2c5;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+            font-weight: 500;
+        }
+        .main-nav a:hover {
+            background: rgba(212,160,23,0.15);
+            border-color: var(--rich-gold);
+            color: var(--light-gold);
+        }
+        /* 首屏 */
+        .hero {
+            background: linear-gradient(135deg, #0d1a0d 0%, #1f3a1f 50%, #3e2a1e 100%);
+            padding: 70px 0 60px;
+            position: relative;
+            border-bottom: 3px solid var(--deep-gold);
+            overflow: hidden;
+        }
+        .hero::after {
+            content: "⚜️";
+            position: absolute;
+            right: -30px;
+            bottom: -50px;
+            font-size: 15rem;
+            opacity: 0.08;
+            transform: rotate(15deg);
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-copy h2 {
+            font-size: 2.6rem;
+            color: var(--light-gold);
+            line-height: 1.2;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px var(--shadow);
+        }
+        .hero-copy .lead {
+            font-size: 1.2rem;
+            color: #d9cfa3;
+            margin-bottom: 25px;
+            border-left: 4px solid var(--rich-gold);
+            padding-left: 15px;
+        }
+        .hero-copy p {
+            color: #cac09a;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--rich-gold), var(--deep-gold));
+            color: #171007;
+            box-shadow: 0 4px 15px rgba(212,160,23,0.3);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(212,160,23,0.5);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--rich-gold);
+            color: var(--light-gold);
+        }
+        .btn-outline:hover {
+            background: rgba(212,160,23,0.1);
+        }
+        .hero-card {
+            background: rgba(30, 20, 10, 0.7);
+            backdrop-filter: blur(4px);
+            border: 1px solid var(--deep-gold);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        .hero-card h3 {
+            color: var(--light-gold);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .hero-card ul {
+            list-style: none;
+            margin: 15px 0;
+        }
+        .hero-card li {
+            padding: 8px 0;
+            border-bottom: 1px dashed rgba(212,160,23,0.2);
+            display: flex;
+            gap: 8px;
+            align-items: baseline;
+        }
+        .hero-card li:last-child {
+            border-bottom: none;
+        }
+        .hero-card .stat {
+            color: var(--rich-gold);
+            font-weight: bold;
+        }
+        /* 内容区块 */
+        .section {
+            padding: 60px 0;
+        }
+        .section-alt {
+            background: rgba(20, 35, 20, 0.6);
+            border-top: 1px solid rgba(212,160,23,0.2);
+            border-bottom: 1px solid rgba(212,160,23,0.2);
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            color: var(--light-gold);
+            font-size: 2rem;
+            letter-spacing: 2px;
+            display: inline-block;
+            padding-bottom: 8px;
+            border-bottom: 3px solid var(--rich-gold);
+        }
+        .section-title p {
+            margin-top: 10px;
+            color: #bbb07a;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* 传说板块 */
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .legend-card {
+            background: linear-gradient(160deg, #2a2a18, #1a2a1a);
+            border: 1px solid #5a4a22;
+            border-radius: 10px;
+            padding: 25px;
+            transition: 0.3s;
+        }
+        .legend-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--rich-gold);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+        }
+        .legend-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .legend-card h3 {
+            color: var(--light-gold);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        .legend-card p {
+            color: #c8c09a;
+            font-size: 0.95rem;
+        }
+        /* 攻略步骤 */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            counter-reset: step-counter;
+        }
+        .step-item {
+            position: relative;
+            background: rgba(40, 30, 20, 0.7);
+            padding: 30px 20px 20px;
+            border-radius: 12px;
+            border-top: 4px solid var(--deep-gold);
+        }
+        .step-item::before {
+            counter-increment: step-counter;
+            content: "0" counter(step-counter);
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: rgba(212,160,23,0.2);
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            line-height: 1;
+        }
+        .step-item h3 {
+            color: var(--light-gold);
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        .step-item p {
+            color: #b8ad82;
+            font-size: 0.95rem;
+        }
+        /* 装备表格 */
+        .gear-table-wrap {
+            overflow-x: auto;
+        }
+        .gear-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(30, 30, 20, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .gear-table th {
+            background: #2a2a1a;
+            color: var(--light-gold);
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid var(--rich-gold);
+            font-size: 1.1rem;
+        }
+        .gear-table td {
+            padding: 14px 15px;
+            border-bottom: 1px solid rgba(212,160,23,0.12);
+            color: #d6caa0;
+        }
+        .gear-table tr:last-child td {
+            border-bottom: none;
+        }
+        .gear-table tr:hover td {
+            background: rgba(212,160,23,0.05);
+        }
+        /* 常见问题 */
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: rgba(30, 30, 20, 0.6);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 20px 25px;
+            border-left: 4px solid var(--rich-gold);
+        }
+        .faq-item h3 {
+            color: var(--light-gold);
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+        .faq-item p {
+            color: #c0b58a;
+            font-size: 0.95rem;
+        }
+        /* 提示框 */
+        .tip-box {
+            background: linear-gradient(135deg, rgba(212,160,23,0.15), rgba(184,134,11,0.05));
+            border: 1px solid var(--rich-gold);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 30px 0;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+        .tip-box .tip-icon {
+            font-size: 2rem;
+        }
+        .tip-box h3 {
+            color: var(--light-gold);
+            margin-bottom: 5px;
+        }
+        .tip-box p {
+            color: #c5ba90;
+            font-size: 0.95rem;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #0a120a;
+            border-top: 2px solid var(--deep-gold);
+            padding: 40px 0 20px;
+            margin-top: 40px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(212,160,23,0.2);
+        }
+        .footer-col h3 {
+            color: var(--light-gold);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col li {
+            margin-bottom: 6px;
+        }
+        .footer-col a {
+            color: #a89b6e;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        .footer-col a:hover {
+            color: var(--light-gold);
+        }
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            color: #7a7040;
+            font-size: 0.85rem;
+        }
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .legend-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .steps {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            .logo-area {
+                justify-content: center;
+            }
+            .main-nav ul {
+                justify-content: center;
+            }
+            .hero-copy h2 {
+                font-size: 1.9rem;
+            }
+            .legend-grid {
+                grid-template-columns: 1fr;
+            }
+            .steps {
+                grid-template-columns: 1fr;
+            }
+            .section {
+                padding: 40px 0;
+            }
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 400px) {
+            .btn-group {
+                flex-direction: column;
+            }
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<header class="site-header">
+    <div class="wrapper header-inner">
+        <div class="logo-area">
+            <span class="logo-icon">🏰</span>
+            <div class="logo-text">
+                <h1>勇闯黄金城</h1>
+                <span class="sub">El Dorado 探险指南</span>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#legend">古城传说</a></li>
+                <li><a href="#route">探险路线</a></li>
+                <li><a href="#gear">装备清单</a></li>
+                <li><a href="#skill">生存技巧</a></li>
+                <li><a href="#faq">常见问题</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 首屏 -->
+    <section class="hero">
+        <div class="wrapper hero-grid">
+            <div class="hero-copy">
+                <h2>踏入失落的黄金之城</h2>
+                <div class="lead">寻找传说中的埃尔多拉多——一场关于勇气与智慧的终极冒险</div>
+                <p>勇闯黄金城，不仅是一次对古老宝藏的探寻，更是一场考验心智与体魄的极限旅程。从亚马逊雨林到安第斯山脉，我们为您梳理最可靠的探险路径、装备选择与求生策略，助您在追寻传说之路上走得更远。</p>
+                <div class="btn-group">
+                    <a href="#route" class="btn btn-primary">开始探险计划</a>
+                    <a href="#legend" class="btn btn-outline">了解历史真相</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h3>📜 探险速览</h3>
+                <ul>
+                    <li><span>🗺️ 推荐季节</span><span class="stat">6月-9月（旱季）</span></li>
+                    <li><span>⏱️ 预计时长</span><span class="stat">21-30天</span></li>
+                    <li><span>🏔️ 最高海拔</span><span class="stat">约4,200米</span></li>
+                    <li><span>⚠️ 难度等级</span><span class="stat">高级（专业向导陪同）</span></li>
+                    <li><span>💎 核心目标</span><span class="stat">科拉坎查遗址</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 传说背景 -->
+    <section class="section" id="legend">
+        <div class="wrapper">
+            <div class="section-title">
+                <h2>黄金城传说溯源</h2>
+                <p>黄金城并非虚构的童话，而是深深植根于南美原住民历史与西班牙殖民时期的真实渴望。</p>
+            </div>
+            <div class="legend-grid">
+                <article class="legend-card">
+                    <span class="icon">🏞️</span>
+                    <h3>穆伊斯卡人的仪式</h3>
+                    <p>传说在瓜塔维塔湖，穆伊斯卡部落的新任首领全身涂满金粉，在湖中洗净身体，同时将黄金与翡翠投入湖中作为祭品。这一仪式被西班牙人听闻后，逐渐演变为“黄金人”埃尔多拉多的传说。</p>
+                </article>
+                <article class="legend-card">
+                    <span class="icon">🗡️</span>
+                    <h3>殖民者的执念</h3>
+                    <p>16世纪起，无数探险队在哥伦比亚、委内瑞拉和巴西的密林中搜寻黄金城。他们相信这座城由黄金建造，街道上铺满宝石。持续的搜寻虽未发现黄金城，却意外开拓了南美内陆的版图。</p>
+                </article>
+                <article class="legend-card">
+                    <span class="icon">🔍</span>
+                    <h3>现代考古视角</h3>
+                    <p>当代考古学家认为，黄金城可能并非单一城市，而是多个仪式中心与矿藏区的集合。瓜塔维塔湖的打捞发现了大量金器，印证了祭礼的真实性，但“整座城市由黄金打造”更可能是文学化的想象。</p>
+                </article>
+            </div>
+            <div class="tip-box">
+                <span class="tip-icon">💡</span>
+                <div>
+                    <h3>给探险者的理性提示</h3>
+                    <p>历史研究显示，黄金城的核心并非“遍地黄金”，而是古代文明对神圣与财富的独特理解。建议探险者带着考古的视角出发，而非单纯追求寻宝，这样才能收获更丰富的人文体验。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 经典路线 -->
+    <section class="section section-alt" id="route">
+        <div class="wrapper">
+            <div class="section-title">
+                <h2>三条经典探险路线</h2>
+                <p>综合难度、风景与历史遗迹丰富度，以下路线受到资深探险者推荐。每条路线都需要充分的体能准备。</p>
+            </div>
+            <div class="steps">
+                <div class="step-item">
+                    <h3>🏔️ 瓜塔维塔湖线</h3>
+                    <p>距离波哥大约2小时车程，徒步难度较低。可以参观湖畔博物馆与仪式遗址，适合初次尝试黄金城主题旅行的探索者。单日往返或两日露营均可。</p>
+                </div>
+                <div class="step-item">
+                    <h3>🌳 蒂埃里塔德内线</h3>
+                    <p>穿越哥伦比亚东部平原与密林，结合原住民社区探访。5-7天徒步行程，需要当地向导。途中可看到岩画与古矿坑遗迹，充满野趣。</p>
+                </div>
+                <div class="step-item">
+                    <h3>⛰️ 安第斯山脊线</h3>
+                    <p>挑战性最高的路线，沿古印加支线翻越海拔4000米的山脊。适合有高海拔经验的探险者，全程约12天，能俯瞰壮丽的峡谷与云海。</p>
+                </div>
+                <div class="step-item">
+                    <h3>🚣 奥里诺科河段</h3>
+                    <p>结合独木舟与徒步的混合路线，沿奥里诺科河上游探索。雨季时水位上涨，部分古迹仅能通过水路抵达，提供独特的考察视角。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 装备与准备 -->
+    <section class="section" id="gear">
+        <div class="wrapper">
+            <div class="section-title">
+                <h2>核心装备与准备清单</h2>
+                <p>在偏远地区，装备的可靠性直接决定探险质量。以下清单基于多支探险队的实际反馈整理。</p>
+            </div>
+            <div class="gear-table-wrap">
+                <table class="gear-table">
+                    <thead>
+                        <tr>
+                            <th>类别</th>
+                            <th>推荐装备</th>
+                            <th>关键说明</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>🧥 衣物</td>
+                            <td>速干衣裤、抓绒保暖层、防水冲锋衣</td>
+                            <td>山区昼夜温差可超过20°C，务必分层穿着</td>
+                        </tr>
+                        <tr>
+                            <td>🥾 鞋履</td>
+                            <td>高帮防水徒步鞋、溯溪鞋</td>
+                            <td>路线常涉水，两双鞋交替使用可防足部问题</td>
+                        </tr>
+                        <tr>
+                            <td>💧 饮水</td>
+                            <td>便携净水器、水袋、消毒片</td>
+                            <td>野外水源务必处理后再饮用</td>
+                        </tr>
+                        <tr>
+                            <td>🧭 导航</td>
+                            <td>GPS设备、纸质地图、指南针</td>
+                            <td>密林区信号差，传统导航工具是保底手段</td>
+                        </tr>
+                        <tr>
+                            <td>⛺ 露营</td>
+                            <td>轻量帐篷、睡袋（舒适温标0°C）、防潮垫</td>
+                            <td>选择抗风性能好的帐篷，山地天气多变</td>
+                        </tr>
+                        <tr>
+                            <td>💊 医疗</td>
+                            <td>个人药品、蛇伤处理包、高原药</td>
+                            <td>高海拔路线需提前服用乙酰唑胺并咨询医生</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tip-box">
+                <span class="tip-icon">⚠️</span>
+                <div>
+                    <h3>安全第一原则</h3>
+                    <p>永远不要独自进入偏远地区。建议至少四人成行，并聘请有资质的当地向导。出发前将行程告知亲友或当地管理机构。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 生存技巧 -->
+    <section class="section section-alt" id="skill">
+        <div class="wrapper">
+            <div class="section-title">
+                <h2>野外生存核心技巧</h2>
+                <p>掌握这些基础技能，能让您在突发情况下保持冷静并作出正确判断。</p>
+            </div>
+            <div class="legend-grid">
+                <article class="legend-card">
+                    <h3>💧 水源寻找</h3>
+                    <p>优先寻找流动的溪水，避免死水潭。清晨沿山谷下行通常能找到水源。竹节、藤蔓中的积水可以收集，但务必煮沸或过滤。</p>
+                </article>
+                <article class="legend-card">
+                    <h3>🔥 安全生火</h3>
+                    <p>在潮湿环境中，寻找树脂丰富的松木作为引火物。使用石头围建火塘，离开前彻底熄灭并掩埋灰烬。注意当地防火规定。</p>
+                </article>
+                <article class="legend-card">
+                    <h3>🧭 迷途应对</h3>
+                    <p>发现自己迷路时立即停下，原地标记并回忆来路。使用哨子或反光镜发出求救信号，节省体力等待救援。切勿盲目乱走。</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="section" id="faq">
+        <div class="wrapper">
+            <div class="section-title">
+                <h2>勇闯黄金城常见问题</h2>
+                <p>针对探险者最关心的问题，我们提供客观参考建议。</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>❓ 寻找黄金城需要特殊许可证吗？</h3>
+                    <p>部分遗址位于国家公园或原住民保护区内，确实需要提前向管理机构申请进入许可。建议通过正规旅行社代办，并预留至少两周的审批时间。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ 最佳探险季节是什么时候？</h3>
+                    <p>多数地区旱季（12月至次年3月，以及6月至9月）道路状况较好，雨季则可能遭遇山洪与道路中断。安第斯山区需额外关注雪线变化。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ 完全没有野外经验可以参加吗？</h3>
+                    <p>建议先参加短途的入门级徒步活动，积累露营与导航经验。黄金城主题路线大多属于中等以上难度，新手应选择成熟运营的商业团队。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>❓ 是否真的能找到黄金文物？</h3>
+                    <p>根据各国法律，私自挖掘或带走文物是严重违法行为。探险的意义在于感受历史现场，而非获取物品。请尊重文化遗产保护法规。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>🏰 勇闯黄金城</h3>
+                <p style="color:#a89b6e; font-size:0.9rem;">为每位渴望探索的旅行者提供可靠的传说考据与实用冒险建议。理性探险，敬畏自然。</p>
+            </div>
+            <div class="footer-col">
+                <h3>栏目导航</h3>
+                <ul>
+                    <li><a href="#legend">传说溯源</a></li>
+                    <li><a href="#route">路线规划</a></li>
+                    <li><a href="#gear">装备指南</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>友情提示</h3>
+                <ul>
+                    <li><a href="#">探险安全守则</a></li>
+                    <li><a href="#">文化遗产保护</a></li>
+                    <li><a href="#">当地法规查询</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 勇闯黄金城探险指南 · 本页面内容仅供信息参考，探险活动请务必咨询专业人士。</p>
+        </div>
+    </div>
+</footer>
+</body>
+  </html>
